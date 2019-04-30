@@ -1,657 +1,164 @@
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-<style>
-html {
-  scroll-behavior: smooth;
-}
-div.fixed {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-p.small {
-  line-height: 1.3;
-}
-a {
-  text-decoration: none;
-  line-height: 0.20;
-  color: white;
-  padding: 20px 20%;
-}
-a:hover {
-  color: rgba(203, 203, 203, 1);
-}
-td.roundedCorners {
-  background-color: rgba(21, 21, 23, 0.90);
-  border-radius: 70px;
-}
-table.roundedCorners {
-  background-color: rgba(26, 26, 28, 0.5);
-  border-radius: 15px;
-}
-table.roundedCorners2 {
-  background-color: rgba(26, 26, 28, 0.90);
-  border-radius: 150px;
-}
-table.roundedCorners3 {
-  background-color: rgba(26, 26, 28, 0.90);
-  border-radius: 50px;
-}
-td.roundedCorners4 {
-  background-color: rgba(26, 26, 28, 0.90);
-  border-radius: 10px;
-}
-td.roundedCorners5 {
-  background-color: rgba(26, 26, 28, 0.90);
-  border-radius: 10px;
-  padding: 15px;
-}
-td.tableBG {
-  background-image: url("Headshot.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 3%;
-}
-#p1 {
-	background-image: url("Mountain_Background1.png");
-  left: 0;
-  right: 0;
-  bottom:0;
-  margin: -8;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-#p2 {
-	background-image: url("Sunset_Background.png");
-  margin: -8;
-  padding: -8;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-textarea[type=text] {
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  border-radius: 30px;
-  outline: none;
-  font: "Verdana";
-  font-size: 15px;
-  color: white;
-  padding-top: 20px;
-  padding-left: 20px;
-}
-textarea[type=text]:focus {
-  border: 3px solid rgba(26, 26, 28, 0.50);
-}
-input:focus {
-    outline:3px solid rgba(26, 26, 28, 0.50);
-}
-</style>
-</head>
-<div class = "fixed">
-<body bgcolor = 0E0E0E>
-  <p style = "float: center;">
-  <table style="width:100%">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style>
-      table, th {
-        padding: 1px;
+      li {
+        list-style:none;
+        display:inline-block;
+        margin-right:35px;
+      }
+      a {
+        text-decoration:none;
+        cursor:pointer;
+      }
+      font.light {
+        font-weight: 100;
+      }
+      .bottom__line {
+        position:absolute;
+        top:65px;
+        left:270px;
+        width:48px;
+        height:2px;
+        background-color:#d94f5c;
+      }
+      .bottom__active {
+        transform: translate3d(0%, 0, 0);
+        transition:all linear 240ms;
+      }
+      .bottom__active1 {
+        transform: translate3d(250%, 0, 0);
+        transition:all linear 240ms;
+      }
+      .bottom__active2 {
+        transform: translate3d(530%, 0, 0);
+        transition:all linear 240ms;
+      }
+      .bottom__active3 {
+        transform: translate3d(350%, 0, 0);
+        transition:all linear 240ms;
+      }
+      .bottom__active4 {
+        transform: translate3d(350%, 0, 0);
+        transition:all linear 240ms;
+      }
+      .bottom__active4 {
+        transform: translate3d(350%, 0, 0);
+        transition:all linear 240ms;
+      }
+      .color,.color1,.color2 {
+        color:#d94f5c;
+        transition:all linear 100ms;
+      }
+      div.fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+      }
+      #p1 {
+      	background-image: url("background1.png");
+        left: 0;
+        right: 0;
+        bottom:0;
+        margin: -8;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      #about {
+        margin: -8;
+        background-color: rgb(20,20,20);
       }
     </style>
-    <tr>
-      <td width = "1%">
-      </td>
-      <td width = "20%">
-      <font size = "1" color = "white" face = "Verdana">
-      created by&nbsp;</font>
-      <font size = "2" color = "white" face = "Verdana">
-      Adrian Iannantuono
-      </font></td>
-      <td>
-      </td>
-      <th width = "10%" align = "center"><font size = "3" color = "white" face = "Verdana">
-      <div id = "nav" class ="clearfix">
-      <a href = "#Home" class = "hover">
-      Home
-      </a>
-      </div>
-      </font></th>
-      <th width = "10%"><font size = "3" color = "white" face = "Verdana">
-      <div id = "nav" class ="clearfix">
-      <a href = "#About" class = "hover">
-      About
-      </a>
-      </div>
-      </font></th>
-      <th width = "10%"><font size = "3" color = "white" face = "Verdana">
-      <div id = "nav" class ="clearfix">
-      <a href = "#Projects" class = "hover">
-      Projects
-      </a>
-      </div>
-      </font></th>
-      <th width = "10%"><font size = "3" color = "white" face = "Verdana">
-      <div id = "nav" class ="clearfix">
-      <a href = "#Contact" class = "hover">
-      Contact
-      </a>
-      </div>
-      </font></th>
-      <th width = "2%">
-      </th>
-    </tr>
-  </table>
-  </p>
-</body>
-</div>
 
-<pre id = "p1">
-<div class="section">
-<a name="Home"></a>
-</div>
-
-<body><font color = white face = "Verdana">
-  <table height = "6%">
-    <tr>
-    </tr>
-  </table>
-  <table align = "center">
-    <tr>
-      <p class = "small">
-      <td class="roundedCorners" width = "600px" align = "center"><font size = "20" color = "white" face = "Verdana">Adrian Iannantuono<br/></font>
-      <font size = 2 color = "white" face = "Verdana">&bull; Computer Engineering Student (BASc) at The University of Ottawa	&bull;</font>
-        <p></p>
-      <table align = "center" width = "450">
-        <td align = "left" width = "450">
-          <a href="https://www.linkedin.com/in/adrianiannantuono" target="_blank" style = "padding: 0">
-          <img src = "LinkedIn_Logo.png" alt = "LinkedIn" style = "width:41px;">
-          &nbsp;&nbsp;
-          </a>
-          <a href="https://www.linkedin.com/in/adrianiannantuono" target="_blank" style = "padding: 0">
-          <img src = "Phone_11.png" alt = "LinkedIn" style = "width:41px;">
-          &nbsp;&nbsp;
-          </a>
-          <a href = "#Contact" style="padding: 0;">
-          <img src = "Email_Logo1.png" alt = "LinkedIn" style = "width:41px;">
-          </a>
-        </td>
-        <td align = "right" width = "60">
-          <a href="Resume1.pdf" target="_blank" style = "padding: 0">
-          <img src = "Download_Resume.png" alt = "LinkedIn" style = "width:143px;height:30px;">
-          </a>
-        </td>
-      </table>
-
-      </p>
-      <td width = "600px" align = "center">
-      </td>
-    </tr>
-  </table>
-
-
-  <table align = "center">
-    <tr>
-      <td height = "150px">
-      </td>
-    <tr>
-    <tr>
-    <td class = "roundedCorners" align = "center">
-      <div id = "nav" class ="clearfix">
-      <a href = "#About" style = "padding: 0px 0px;">
-      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
-      viewBox="0 0 224 224" style=" fill:#000000;"><g fill="none" fill-rule="nonzero"
-      stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-      stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-      font-family="none" font-weight="none" font-size="none" text-anchor="none"
-      style="mix-blend-mode: normal"><path d="M0,224v-224h224v224z" fill="none">
-      </path><g fill="#ffffff"><g id="surface1"><path d="M112,8.96c-56.8575,0
-        -103.04,46.1825 -103.04,103.04c0,56.8575 46.1825,103.04
-        103.04,103.04c56.8575,0 103.04,-46.1825 103.04,-103.04c0,-56.8575
-        -46.1825,-103.04 -103.04,-103.04zM112,17.92c52.01,0 94.08,42.07
-        94.08,94.08c0,52.01 -42.07,94.08 -94.08,94.08c-52.01,0 -94.08,-42.07
-        -94.08,-94.08c0,-52.01 42.07,-94.08 94.08,-94.08zM66.78,93.94c-0.1925,0.035
-        -0.385,0.0875 -0.56,0.14c-1.68,0.2975 -3.0275,1.5225 -3.5,3.15c-0.4725,1.645
-        0.0175,3.395 1.26,4.55l44.8,44.8c0.84,0.875 2.0125,1.365 3.22,1.365c1.2075,0
-        2.38,-0.49 3.22,-1.365l44.8,-44.8c1.785,-1.785 1.785,-4.655
-        0,-6.44c-1.785,-1.785 -4.655,-1.785 -6.44,0l-41.58,41.58l-41.58,-41.58c-0.9275,-0.9975
-        -2.275,-1.505 -3.64,-1.4z"></path></g></g></g></svg>
-        </a>
-        </div>
-      </td>
-    </tr>
-  </table>
-
-</pre>
-
-
-
-  <div class="section">
-    <a name="About">
-    <table style="height: 5%;">
-      <tr>
-      </tr>
-    </table>
-    </a>
-
-   <h1><font size = "7" color = "white" face = "Verdana">&nbsp;&nbsp;&nbsp;&nbsp;About</font></h1>
-   <br/>
-   <table class = "roundedCorners" align = "center" width = 90% border="0">
-     <tr>
-       <td class = "tableBG" width = 28%>
-       </td>
-       <td width = 3%>
-       </td>
-       <td width = 64% valign = "top">
-         <strong>
-         <font size = 6 color = "white" face = "Verdana">
-         <br/>Adrian Iannantuono
-       </font>
-      </strong>
-       <strong>
-       <font size = "4" color = "white" face = "Verdana"><br/><br/>&nbsp;About me</br>
-       </strong>
-       <hr width = "30%" align = "left">
-       </font>
-       <font size = "2" color = "white" face = "Verdana">I am a 1st year computer engineering student currently
-       working towards becomming a professional engineer. With a passion for technology, innovation as well as design/creativity,
-       I am able to incorporate these things in my work.</br></br>
-      </font>
-      <strong>
-      <font size = "4" color = "white" face = "Verdana">&nbsp;Technical Skills</br>
-      </strong>
-      <hr width = "40%" align = "left">
-
-      <table align = "center" width = 100%>
-        <tr height = 50>
-          <td class = "roundedCorners4" align = "center" width = 20%><font size = "3" color = "white" face = "Verdana">
-            Java
-          </font></td>
-          <td class = "roundedCorners4" align = "center" width = 20%><font size = "3" color = "white" face = "Verdana">
-            C
-          </font></td>
-          <td class = "roundedCorners4" align = "center" width = 20%><font size = "3" color = "white" face = "Verdana">
-            C++
-          </font></td>
-          <td class = "roundedCorners4" align = "center" width = 20%><font size = "3" color = "white" face = "Verdana">
-            HTML / CSS
-          </font></td>
-          <td class = "roundedCorners4" align = "center" width = 20%><font size = "3" color = "white" face = "Verdana">
-            Python
-          </font></td>
-        </tr>
-        <tr height = 50>
-          <td class = "roundedCorners4" align = "center" width = 20%><font size = "3" color = "white" face = "Verdana">
-            Adobe<br/>Premier
-          </font></td>
-          <td class = "roundedCorners4" align = "center" width = 20%><font size = "3" color = "white" face = "Verdana">
-            Final Cut Pro
-          </font></td>
-          <td class = "roundedCorners4" align = "center" width = 20%><font size = "3" color = "white" face = "Verdana">
-            Adobe<br/>After Effects
-          </font></td>
-          <td class = "roundedCorners4" align = "center" width = 20%><font size = "3" color = "white" face = "Verdana">
-            Adobe<br/>Lightroom
-          </font></td>
-          <td class = "roundedCorners4" align = "center" width = 20%><font size = "3" color = "white" face = "Verdana">
-            Adobe<br/>Photoshop
-          </font></td>
-        </tr>
-      </table>
-      <br/>
-      <table>
-        <tr>
-          <td width = 13%><a href="https://www.linkedin.com/in/adrianiannantuono" target="_blank" style = "padding: 0">
-          <img src = "LinkedIn_Logo.png" alt = "LinkedIn" style = "width:30px;"></a>
-        </td>
-          <td>
-            <font size = "2" color = "white" face = "Verdana">
-            www.linkedIn.com/in/adrianiannantuono
-            </font>
-          </td>
-        </tr>
-        <tr>
-          <td width = 13%><a href="https://www.linkedin.com/in/adrianiannantuono" target="_blank" style = "padding: 0">
-          <img src = "Phone_11.png" alt = "LinkedIn" style = "width:30px;"></a>
-        </td>
-          <td>
-            <font size = "2" color = "white" face = "Verdana">
-            (647) 407 - 0197
-            </font>
-          </td>
-        </tr>
-        <tr>
-          <td width = 13%>
-            <div id = "nav" class ="clearfix">
-            <a href = "#Contact" style="padding: 0;">
-            <img src = "Email_Logo1.png" alt = "Email" style = "width:30px;"></a>
-            </a>
-            </div>
-        </td>
-          <td>
-            <font size = "2" color = "white" face = "Verdana">
-            aiannantuono@me.com
-            </font>
-          </td>
-        </tr>
-      </table>
-      <br/>
-
-    </td>
-    <td width = 3%>
-    </td>
-     </tr>
-   </table>
-   <br/><br/><br/><br/>
-
-   <table align = "center" style = "width:80%;" border="0px" padding = "0">
-     <tr>
-       <td width = "200px">
-       </td>
-       <td style="line-height:3px;" colspan="6" bgcolor = "white">
-       </td>
-       <td width = "4%" bgcolor = "white">
-       </td>
-       <td width = "3%" bgcolor = "white">
-       </td>
-       <td width = "1%" bgcolor = "white">
-       </td>
-       <td width = "1%" bgcolor = "white">
-       </td>
-     </tr>
-     <tr>
-       <th align = "left">
-         <font size = "5" color = "white" face = "Verdana">
-         Education
-         </font>
-       </th>
-       <td width = "1px" rowspan="3" bgcolor = "green">
-       </td>
-       <td>
-       </td>
-       <td width = "25%">
-       </td>
-       <td width = "1px" rowspan="3" bgcolor = "green">
-       </td>
-       <td>
-       </td>
-       <td>
-       </td>
-     </tr>
-     <tr>
-       <td>
-       </td>
-       <td style="line-height:10px;">
-       </td>
-       <td>
-       </td>
-       <td>
-       </td>
-     </tr>
-     <tr>
-       <td>
-       </td>
-       <td class = "roundedCorners5" width = "170px" height = "70px">
-         <strong>
-         <font size = "3" color = "white" face = "Verdana">Holy Trinity School</font>
-         </strong><br/>
-         <font size = "2" color = "white" face = "Verdana">High School Diploma</font><br/>
-         <font size = "1" color = "white" face = "Verdana">2014 - 2018</font>
-       </td>
-       <td>
-       </td>
-       <td class = "roundedCorners5" width = "210px" height = "70px">
-         <strong>
-         <font size = "3" color = "white" face = "Verdana">University of Ottawa</font>
-         </strong><br/>
-         <font size = "2" color = "white" face = "Verdana">BASc in Computer Engineering</font><br/>
-         <font size = "1" color = "white" face = "Verdana">2018 - present</font>
-       </td>
-     </tr>
-   </table>
-
-   <br/><br/><br/>
-
-   <table align = "center" style = "width:80%;" border="0px" padding = "0">
-     <tr>
-       <td width = "220px">
-       </td>
-       <td style="line-height:3px;" colspan="6" bgcolor = "white">
-       </td>
-       <td width = "4%" bgcolor = "white">
-       </td>
-       <td width = "3%" bgcolor = "white">
-       </td>
-       <td width = "1%" bgcolor = "white">
-       </td>
-       <td width = "1%" bgcolor = "white">
-       </td>
-     </tr>
-     <tr>
-       <th align = "left">
-         <font size = "5" color = "white" face = "Verdana">
-         Work History
-         </font>
-       </th>
-       <td width = "1px" rowspan="3" bgcolor = "orange">
-       </td>
-       <td>
-       </td>
-       <td width = "35%">
-       </td>
-       <td>
-       </td>
-       <td>
-       </td>
-       <td>
-       </td>
-     </tr>
-     <tr>
-       <td>
-       </td>
-       <td style="line-height:10px;">
-       </td>
-       <td>
-       </td>
-       <td>
-       </td>
-     </tr>
-     <tr>
-       <td>
-       </td>
-       <td class = "roundedCorners5" width = "230px" height = "70px">
-         <strong>
-         <font size = "3" color = "white" face = "Verdana">Artech Images Inc.</font>
-         </strong><br/>
-         <font size = "2" color = "white" face = "Verdana">Photo editing and retouching, archiving, filing and front desk</font><br/>
-         <font size = "1" color = "white" face = "Verdana">2013 - present(part-time)</font>
-       </td>
-       <td>
-       </td>
-       <td width = "210px">
-
-       </td>
-     </tr>
-   </table>
-
-
-
-
-
-
-
-
-
-   <table style="width:100%;">
-     <tr style = "height:250px;">
-       <td>
-
-       </td>
-     </tr>
-     <tr>
-       <td>
-         <table class = "roundedCorners" style="width:100%; height: 200;" align = "center">
-           <tr>
-             <th align = "center" style = "width:40px;"><font size = "4" color = "white" face = "Verdana">Awards | </font></th>
-             <td style = "width:150px;"><font size = "3" color = "white" face = "Verdana">Trinitarian Award</font><br/>
-             <font size = "2" color = "white" face = "Verdana">Holy Trinity School</font><br/>
-             <font size = "1" color = "white" face = "Verdana">2018</font></td>
-           </tr>
-         </table>
-
-
-
-       </td>
-       <td>
-         <table class = "roundedCorners" style="width:100%; height: 300;" align = "center">
-           <tr>
-             <th align = "center" style = "width:40px;"><font size = "4" color = "white" face = "Verdana">Community Involvement | </font></th>
-             <td align = "justify" style = "width:150px;"><font size = "3" color = "white" face = "Verdana">Summer Camp Counselor</font><br/>
-               <font size = "2" color = "white" face = "Verdana">&bull; Planned, organized and implemented activities for
-                 the camp members to participate in<br/>&bull; Responsible for the safety of the campers during these events</font><br/>
-             <font size = "1" color = "white" face = "Verdana">June/July 2016</font></td>
-           </tr>
-           <tr>
-             <td></td>
-             <td align = "justify" style = "width:100%;"><font size = "3" color = "white" face = "Verdana">Special Olympics Canada</font><br/>
-               <font size = "2" color = "white" face = "Verdana">&bull; Supervised, coached and encouraged all camp participants
-                 while maintaining a positive and safe environment<br/>&bull; Ensured all participants felt welcome and comfortable
-                 while having an enjoyable and memorable experience</font><br/>
-             <font size = "1" color = "white" face = "Verdana">November 2016 & November 2017</font></td>
-           </tr>
-         </table>
-
-
-
-
-
-       </td>
-     </tr>
-
-  </table>
-  </div>
-
-  <br/>
-
-  <div class="section">
-    <a name="Projects"></a>
-    <table height = "50px">
-      <tr>
-      </tr>
-    </table>
-   <h1><font size = "7" color = "white" face = "Verdana">&nbsp;&nbsp;&nbsp;&nbsp;Projects</font></h1>
-   <br/>
-   <p>Comming soon...</p>
-   <!--<video width="20%" playsinline autoplay muted loop>
-     <source src="South Mountain Sunset Timelapse-4K copy.mov" type="video/mp4">
-   </video>
-   <video width="20%" playsinline autoplay muted loop>
-     <source src="Timelapse | Camnore Campground-HD 1080p.mov" type="video/mp4">
-   </video>
-   <video width="20%" playsinline autoplay muted loop>
-     <source src="Cottage Star TimeLapse-4K.mov" type="video/mp4">
-   </video>
-   <video width="20%" playsinline autoplay muted loop>
-     <source src="2 Cottage TimeLapse 2.mov" type="video/mp4">
-   </video>
-   <video width="20%" playsinline autoplay muted loop>
-     <source src="1Cottage TimeLapse With Trees.mov" type="video/mp4">
-   </video>
-   <video width="20%" playsinline autoplay muted loop>
-     <source src="Parking Garage Sunset Timelapse-4K.mov" type="video/mp4">
-   </video>-->
-
-
-   <table height = "400px">
-     <tr>
-     </tr>
-   </table>
-
-  </div>
-
-  <pre id = "p2">
-
-  <div class="section">
-
-
-
-    <a name="Contact"></a>
-
-   <h1><font size = "7" color = "white" face = "Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</font></h1>
-   <form action="mailto:aiannantuono@me.com" method="post" enctype="text/plain" onsubmit='redirect();return false;'>
-     <table class = "roundedCorners2" align = "center" border="0" height="60px" width="500px">
-      <tr>
-        <th align = "right"><font size = "5" color = "white" face = "Verdana">
-          TO:&nbsp;&nbsp;
-        </font></th>
-        <td align = "left" width = "306px"><font size = "3" color = "white" face = "Verdana">
-          aiannantuono@me.com
-        </font></td>
-      </tr>
-      </style>
-     </table>
-     <table class = "roundedCorners2" align = "center" border="0" height="60px" width="500px">
-      <tr>
-        <th align = "right"><font size = "5" color = "white" face = "Verdana">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM:
-        </font></th>
-        <th align = "left">
-          <font size = "3" color = "white" face = "Verdana">
-          <textarea type = "text" name = "From" style = "height:50px; width:270px; resize:none; padding-top: 15px; padding-left: 5px;" placeholder="Click Here To Enter Your Email" maxlength="35"></textarea>
-        </font></th>
-      </tr>
-     </table>
-     <table class = "roundedCorners3" align = "center" border="0" height="300px" width="500px">
-      <tr>
-        <th height = "15px">
-        </th>
-      </tr>
-      <tr>
-        <th valign = "bottom" height = "15px" align = "left"><font size = "5" color = "white" face = "Verdana">
-          &nbsp;&nbsp;&nbsp;MESSAGE:
-        </font><font size = "3" color = "white" face = "Verdana">
-        </th>
-      </tr>
-      <tr>
-        <th valign = "top">
-          <textarea type = "text" name = "Message" style = "width:450px;height:200px;min-height:200px;min-width:450px;max-width:450px;max-height: 800px;" placeholder="Click Here To Compose a New Message"></textarea>
-        </font></th>
-      </tr>
-     </table>
-     <table align = "center" width="500px">
-      <tr>
-        <td>
-          <table>
-            <td width = 250px></td>
-            <td width = 250px align = "right">
-              <input type="submit" align = "right" value="" style="background-color: transparent; background-image: url(Submit.png); background-size: 200px; background-repeat: no-repeat; background-position: right; border: 0; width: 200px; height: 50px; cursor: pointer;" onmouseover="" />
+    <pre id = "p1">
+      <div class = "fixed">
+        <table style = "width:100%">
+          <tr align = "center" height = "50px">
+            <td width = "2%">
             </td>
-          </table>
-        </td>
-      </tr>
+            <td width = "15%" align = "left">
+              <p style = "word-spacing: -9px">
+              <font size = "6" face = "Avenir">
+                <b>
+                  <span>tuono</span>
+                </b>
+              </font>
+              <font class = "light" size = "5" face = "Avenir">
+                .ca
+              </font>
+            </p>
+            </td>
+            <td>
+              <li class = "menu--item__one">
+                <font size = "4" face = "Avenir">
+                  <a class="link">home</a>
+                </font>
+              </li>
+            </td>
+            <td>
+              <li class = "menu--item__two">
+                <font size = "4" face = "Avenir">
+                  <a class="link1">about</a>
+                </font>
+              </li>
+            </td>
+            <td>
+              <li class = "menu--item__three">
+                <font size = "4" face = "Avenir">
+                  <a class="link2">projects</a>
+                </font>
+              </li>
+            </td>
+            <td>
+              <li class = "menu--item__four">
+                <font size = "4" face = "Avenir">
+                  <a class="link3">mapping</a>
+                </font>
+              </li>
+            </td>
+            <td>
+              <li class = "menu--item__five">
+                <font size = "4" face = "Avenir">
+                  <a class="link4">fabrication</a>
+                </font>
+              </li>
+            </td>
+            <td>
+              <li class = "menu--item__six">
+                <font size = "4" face = "Avenir">
+                  <a class="link4">contact</a>
+                </font>
+              </li>
+            </td>
+            <td>
+              <img src = "Shop.png" height = "30px">
+            </td>
+            <td width = "10%">
+            </td>
+            <li class="bottom__line">
+            </li>
+          </tr>
+        </table>
 
-     </table>
+      <script src="NavBarUI.js" type="text/javascript"></script>
+    </div>
 
-   </form>
+  </head>
 
-
-  </div>
-
+  <body>
+      <table>
+        <tr height = "500px">
+        </tr>
+      </table>
+  </body>
   </pre>
 
-
-
-</font></body>
-
-<body>
-  <br/>
-  <font size = 1% color = "white" face = "Verdana">
-  <p align = "center">Website created using HTML and CSS&nbsp;&nbsp; &bull; &nbsp;&nbsp;Created by Adrian Iannantuono</p>
-  <p align = "center">&copy;&nbsp;adrianiannantuono.ca</p>
-  <br/>
-  <font>
-</body>
-
+  <pre id = "about">
+    <table>
+      <tr height = "200px">
+      </tr>
+    </table>
+  </pre>
 </html>
