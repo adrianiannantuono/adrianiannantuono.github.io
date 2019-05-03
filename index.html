@@ -2,25 +2,32 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <style>
-      a {
+      .nav {
         text-decoration: none;
-        color: inherit;
-        cursor:pointer;
-        padding: 20px;
+        color: black;
+        cursor: pointer;
+        background: none;
+        border: none;
+        text-align: center;
+        line-height: 65px;
+        font-size: 16px;
+        transition: 0.1s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .nav:hover {
+        color: #ff8928;
       }
       font.light {
         font-weight: 100;
       }
       div.fixed {
         position: fixed;
-        height: 75px;
         top: 0;
         right: 0;
         left: 0;
         background-color: rgba(255, 255, 255, 0.99);
-      }
-      a:hover {
-        color: #ff8928;
       }
       .roundedCorners {
         background-color: rgba(50, 50, 50, 0.6);
@@ -74,7 +81,7 @@
     </style>
 
       <div class = "fixed">
-        <table style = "width:100%">
+        <table style = "width:100%" cellspacing = "0" cellpadding = "0">
           <tr height = "10px">
           </tr>
           <tr align = "center" height = "56px">
@@ -92,35 +99,35 @@
               </font>
             </p>
             </td>
-            <td align = "center">
-              <a href = "index.html#Home" class = "hover">
-                <font size = "4" face = "Avenir" color = "#ff8928">home</font>
+            <td align = "center" width = "10%">
+              <a class = "nav" href = "index.html#Home" style = "height: 100%; width: 100%;">
+                <font size = "4" face = "Avenir">home</font>
               </a>
             </td>
-            <td>
-              <a href = "index.html#About" class = "hover">
+            <td align = "center" width = "10%">
+              <a class = "nav" href = "index.html#About" style = "height: 100%; width: 100%;">
                 <font size = "4" face = "Avenir">about</font>
               </a>
             </td>
-            <td>
-              <a class = "hover" href = "projects.html">
+            <td align = "center" width = "10%">
+              <a class = "nav" href = "projects.html" style = "height: 100%; width: 100%;">
                 <font size = "4" face = "Avenir">projects</font>
               </a>
             </td>
-            <td>
-              <a href = "mapping.html" class = "hover">
+            <td align = "center" width = "10%">
+              <a class = "nav" href = "mapping.html" style = "height: 100%; width: 100%;">
                 <font size = "4" face = "Avenir">mapping</font>
               </a>
             </td>
-            <td>
-              <a href = "fabrication.html"class = "hover">
+            <td align = "center" width = "10%">
+              <a class = "nav" href = "fabrication.html" style = "height: 100%; width: 100%;">
                 <font size = "4" face = "Avenir">fabrication</font>
               </a>
             </td>
-            <td>
-                <a href = "index.html#Contact" class = "hover">
-                  <font size = "4" face = "Avenir">contact</font>
-                </a>
+            <td align = "center" width = "10%">
+              <a class = "nav" href = "index.html#Contact" style = "height: 100%; width: 100%;">
+                <font size = "4" face = "Avenir">contact</font>
+              </a>
             </td>
             <td>
               <img src = "Shop.png" height = "30px">
@@ -145,14 +152,12 @@
             </td>
             <td>
             </td>
+            <td>
+            </td>
+            <td>
+            </td>
           </tr>
         </table>
-
-        <script>
-        function navClick(location) {
-          index.getElementByID("location").style.backgroundColor = "#d94f5c";
-        }
-        </script>
 
     </div>
 
