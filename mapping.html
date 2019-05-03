@@ -2,11 +2,25 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <style>
-    a {
+    html {
+      scroll-behavior: smooth;
+    }
+    .nav {
       text-decoration: none;
-      color: inherit;
-      cursor:pointer;
-      padding: 20px;
+      color: black;
+      cursor: pointer;
+      background: none;
+      border: none;
+      text-align: center;
+      line-height: 65px;
+      font-size: 16px;
+      transition: 0.25s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .nav:hover {
+      color: #ff8928;
     }
     font.light {
       font-weight: 100;
@@ -18,41 +32,10 @@
       left: 0;
       background-color: rgba(255, 255, 255, 0.99);
     }
-    a:hover {
-      color: rgba(80, 80, 80, 1);
-    }
-    .roundedCorners {
-      background-color: rgba(50, 50, 50, 0.6);
-      border-radius: 90px;
-    }
-    .roundedCorners1 {
-      background-color: rgba(50, 50, 50, 0.6);
-      border-radius: 30px;
-    }
-    textarea[type=text] {
-      background-color: rgba(0, 0, 0, 0);
-      border: none;
-      border-radius: 30px;
-      outline: none;
-      font: "Avenir";
-      font-size: 15px;
-      color: white;
-      padding-top: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-    textarea[type=text]:focus {
-      border: 2px solid rgba(26, 26, 28, 0.50);
-    }
-    input:focus {
-        outline:3px solid rgba(26, 26, 28, 0.50);
-    }
   </style>
 
     <div class = "fixed">
-      <table style = "width:100%">
-        <tr height = "10px">
-        </tr>
+      <table style = "width:100%" cellspacing = "0" cellpadding = "0">
         <tr align = "center" height = "56px">
           <td width = "2%">
           </td>
@@ -68,35 +51,35 @@
             </font>
           </p>
           </td>
-          <td align = "center">
-            <a href = "index.html#Home" class = "hover">
+          <td align = "center" width = "10%">
+            <a class = "nav" href = "index.html#Home" style = "height: 100%; width: 100%;">
               <font size = "4" face = "Avenir">home</font>
             </a>
           </td>
-          <td>
-            <a href = "index.html#About" class = "hover">
+          <td align = "center" width = "10%">
+            <a class = "nav" href = "index.html#About" style = "height: 100%; width: 100%;">
               <font size = "4" face = "Avenir">about</font>
             </a>
           </td>
-          <td>
-            <a class = "hover" href = "projects.html" style="color: inherit;">
+          <td align = "center" width = "10%">
+            <a class = "nav" href = "projects.html" style = "height: 100%; width: 100%;">
               <font size = "4" face = "Avenir">projects</font>
             </a>
           </td>
-          <td>
-            <a href = "mapping.html" class = "hover">
-              <font size = "4" face = "Avenir" color = "#ff8928">mapping</font>
+          <td align = "center" width = "10%">
+            <a class = "nav" href = "mapping.html" style = "height: 100%; width: 100%;">
+              <font size = "4" face = "Avenir">mapping</font>
             </a>
           </td>
-          <td>
-            <a href = "fabrication.html" class = "hover">
+          <td align = "center" width = "10%">
+            <a class = "nav" href = "fabrication.html" style = "height: 100%; width: 100%;">
               <font size = "4" face = "Avenir">fabrication</font>
             </a>
           </td>
-          <td>
-              <a href = "index.html#Contact" class = "hover">
-                <font size = "4" face = "Avenir">contact</font>
-              </a>
+          <td align = "center" width = "10%">
+            <a class = "nav" href = "index.html#Contact" style = "height: 100%; width: 100%;">
+              <font size = "4" face = "Avenir">contact</font>
+            </a>
           </td>
           <td>
             <img src = "Shop.png" height = "30px">
@@ -116,6 +99,10 @@
           <td>
           </td>
           <td style = "background-color: #ff8928;">
+          </td>
+          <td>
+          </td>
+          <td>
           </td>
           <td>
           </td>
