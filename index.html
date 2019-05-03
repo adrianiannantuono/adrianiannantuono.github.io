@@ -36,7 +36,7 @@
         border-radius: 30px;
         outline: none;
         font: "Avenir";
-        font-size: 15px;
+        font-size: 13px;
         color: white;
         padding-top: 20px;
         padding-left: 20px;
@@ -232,52 +232,62 @@
       </tr>
       <tr>
         <td valign = "bottom" width = "50%">
-          <table width = "100%">
-            <tr height = "50px">
-              <td class = "roundedCorners">
-                <font size = "4" color = "white" face = "Avenir">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To:&nbsp;&nbsp;&nbsp;&nbsp;
-                </font>
-                <font size = "2" color = "white" face = "Avenir">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ciannantuono@me.com
-                </font>
-              </td>
-            </tr>
-            <tr height = "5px">
-            </tr>
-            <tr height = "50px">
-              <td class = "roundedCorners">
-              </td>
-            </tr>
-            <tr height = "5px">
-            </tr>
-            <tr height = "100px">
-              <td class = "roundedCorners1">
-                <textarea type = "text" name = "Message" style = "width:615px;height:200px;min-height:200px;min-width:615px;max-width:615px;max-height: 400px;" placeholder="click here to compose a new message"></textarea>
-              </td>
-            </tr>
-          </table>
+          <form action="mailto:aiannantuono@me.com" method="post" enctype="text/plain" onsubmit='redirect();return false;'>
+            <table width = "100%">
+              <tr height = "50px">
+                <td class = "roundedCorners">
+                  <font size = "4" color = "white" face = "Avenir">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To:
+                  </font>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <font size = "2" color = "white" face = "Avenir">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ciannantuono@me.com
+                  </font>
+                </td>
+              </tr>
+              <tr height = "5px">
+              </tr>
+              <tr height = "50px">
+                <td class = "roundedCorners">
+                  <font size = "4" color = "white" face = "Avenir">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From:
+                  </font>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <font size = "2" color = "white" face = "Avenir">
+                    <textarea type = "text" name = "From" style = "width:80%; height: 40px; resize:none; padding-left: 12px; padding-top: 12px;" placeholder="click here to enter your email" maxlength="35"></textarea>
+                  </font>
+                </td>
+              </tr>
+              <tr height = "5px">
+              </tr>
+              <tr height = "100px">
+                <td class = "roundedCorners1">
+                  <textarea type = "text" name = "Message" style = "width:615px;height:200px;min-height:200px;min-width:615px;max-width:615px;max-height: 400px;" placeholder="click here to compose a new message"></textarea>
+                </td>
+              </tr>
+            </table>
 
-        </td>
-        <td width = "50%">
-        </td>
-      </tr>
-      <tr>
-        <td align = "right" height = "140px">
-          <input type="submit" align = "right" value="" style="background-color: transparent; background-image: url(Submit.png); background-size: 160px; background-repeat: no-repeat; background-position: right; border: 0; width: 200px; height: 50px; cursor: pointer;" onmouseover="" />
-          &nbsp;
-        </td>
-      </tr>
-      <tr height = "100px">
-      </tr>
-    </table>
+          </td>
+          <td width = "50%">
+          </td>
+        </tr>
+        <tr>
+          <td align = "right" height = "140px">
+            <input type="submit" align = "right" value="" style="background-color: transparent; background-image: url(Submit.png); background-size: 160px; background-repeat: no-repeat; background-position: right; border: 0; width: 200px; height: 50px; cursor: pointer;" onmouseover="" />
+            &nbsp;
+          </td>
+        </tr>
+        <tr height = "100px">
+        </tr>
+      </table>
+    </form>
   </pre>
 
 
 
   <pre id = "menu">
       <br/>
-      <font size = 1% color = "white" face = "Avenir">
+      <font size = 1px color = "white" face = "Avenir">
       <p align = "center">Website created using HTML and CSS&nbsp;&nbsp; &bull; &nbsp;&nbsp;Created by Adrian Iannantuono</p>
       <p align = "center">&copy;&nbsp;tuono.ca</p>
       <br/>
