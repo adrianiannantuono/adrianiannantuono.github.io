@@ -96,6 +96,8 @@ a.MainText {
     height: 100vh;
     width: 100%;
     flex-direction: column;
+    clip-path: polygon(0% 0%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 0% 100%);
   }
   .nav-links.open {
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
