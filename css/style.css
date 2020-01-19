@@ -4,6 +4,11 @@ body {
   margin: auto;
   overflow-x: hidden;
 }
+.signature {
+  position:fixed;
+  top: 10px;
+  left: 40px;
+}
 .navLinks {
   background: none;
   display: flex;
@@ -84,6 +89,10 @@ a.navItem {
   text-align: center;
 }
 @media screen and (max-width: 850px) and (-webkit-min-device-pixel-ratio: 2){
+  .signature {
+    transform: scale(0.70);
+    left: 30px;
+  }
   .line {
     width: 20px;
     height: 1px;
@@ -124,5 +133,15 @@ a.navItem {
   .landingPage-0-Content {
     transition: 0.2s;
     transform: scale(0.70);
+  }
+  @media screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2){
+    .landingPage-0-Content {
+      transition: 0.2s;
+      left: -50px;
+      transform: scale(0.60);
+    }
+    .hamburger {
+      right: 30px;
+    }
   }
 }
