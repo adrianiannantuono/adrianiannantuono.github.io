@@ -40,6 +40,8 @@ a.navItem {
   float: left;
   top:30%;
   left: 6%;
+  z-index: +1;
+  transition: 0.2s;
 }
 .name-header {
   font-size: 70px;
@@ -79,4 +81,47 @@ a.navItem {
 .contentPage-header {
   font-size: 35px;
   text-align: center;
+}
+@media screen and (max-width: 850px) {
+  .line {
+    width: 20px;
+    height: 1px;
+    background: white;
+    margin: 5px;
+  }
+  .line.open {
+    color: black;
+  }
+  .hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 100px;
+    top: 26px;
+    z-index: 2;
+  }
+  .navLinks {
+    background: white;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    clip-path: polygon(0% 0%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 0% 100%);
+  }
+  .navLinks.open {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+  }
+  .navItem {
+    align-items: center;
+    padding: auto auto;
+  }
+  a.navItem {
+    color: black;
+    padding: 30 50%;
+  }
+  .landingPage-0-Content {
+    transition: 0.2s;
+    transform: scale(0.76);
+  }
 }
