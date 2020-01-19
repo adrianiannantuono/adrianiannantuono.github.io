@@ -82,7 +82,7 @@ a.navItem {
   font-size: 35px;
   text-align: center;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) and (-webkit-min-device-pixel-ratio: 2){
   .line {
     width: 20px;
     height: 1px;
