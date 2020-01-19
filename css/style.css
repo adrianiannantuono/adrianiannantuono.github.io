@@ -71,3 +71,12 @@ a.navItem {
   height: 50px;
   width: 150px;
 }
+.contentPage-top {
+  background: #050523 url('../images/Dotted_Background.png');
+  background-size: cover;
+  height: 200px;
+}
+.contentPage-header {
+  font-size: 35px;
+  text-align: center;
+}
