@@ -137,8 +137,8 @@ a.navItem {
   @media screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2){
     .landingPage-0-Content {
       transition: 0.2s;
-      left: -100px;
-      transform: scale(0.40);
+      left: -130px;
+      transform: scale(0.30);
     }
     .hamburger {
       right: 30px;
