@@ -8,6 +8,24 @@ body {
   position:fixed;
   top: 10px;
   left: 40px;
+  z-index: +2;
+}
+.topNavFrame {
+  width: 100%;
+  height: 77px;
+  border: none;
+  margin: 0px;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: +2;
+}
+.navBackground {
+  position:fixed;
+  height: 77px;
+  width: 100%;
+  background: none;
+  z-index: +1;
+  transition: 0.2s;
 }
 .navLinks {
   background: none;
@@ -39,6 +57,7 @@ a.navItem {
   background-size: cover;
   height: 100vh;
   min-height: 500px;
+  z-index: 0;
 }
 .landingPage-0-Content {
   text-decoration: none;
@@ -46,8 +65,8 @@ a.navItem {
   float: left;
   top:30%;
   left: 6%;
-  z-index: +1;
   transition: 0.2s;
+  z-index: 0;
 }
 .name-header {
   font-size: 70px;
@@ -92,6 +111,9 @@ a.navItem {
   .signature {
     transform: scale(0.70);
     left: 30px;
+  }
+  .topNavFrame {
+    height: 100%;
   }
   .line {
     width: 20px;
