@@ -8,7 +8,7 @@ body {
   position:fixed;
   top: 10px;
   left: 40px;
-  z-index: +2;
+  z-index: +3;
 }
 .topNavFrame {
   width: 100%;
