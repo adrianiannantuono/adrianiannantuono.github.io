@@ -1,8 +1,18 @@
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".navLinks");
-const links = document.querySelectorAll(".navLinks div");
-const zInc = document.querySelectorAll(".landingPage-0-Content");
+const lines = document.querySelectorAll(".line");
+//const topNavFrame = parent.document.querySelector(".topNavFrame");
 
-hamburger.addEventListener("click",()=> {
-  navLinks.classList.toggle("open");
-})
+if (hamburger) {
+  hamburger.addEventListener("click",()=> {
+    navLinks.classList.toggle("open");
+    for(i=0; i < lines.length; i++) {
+      lines[i].classList.toggle("open");
+      console.log(lines[i]);
+    }
+    if (topNavFrame) {
+      topNavFrame.classList.toggle("open");
+    }
+    console.log(navLinks);
+  });
+}

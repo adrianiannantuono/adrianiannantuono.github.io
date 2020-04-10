@@ -52,6 +52,28 @@ a.navItem {
   text-decoration: none;
   transition: 0.2s;
 }
+.COVID-Button {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -75px;
+  font-size: 17px;
+  text-align: center;
+  text-decoration:none
+  color:#E82C00;
+  line-height: 50px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #E82C00;
+  border-radius: 50px;
+  height: 50px;
+  width: 150px;
+  transition: 0.2s;
+}
+.COVID-Button:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}
 .landingPage-0 {
   background: #050523 url('../images/Dotted_Background.png');
   background-size: cover;
@@ -105,24 +127,25 @@ a.navItem {
 }
 .contentPage-header {
   font-size: 35px;
-  text-align: center;
+  margin-left: 50px;
+  text-align: left;
 }
 @media screen and (max-width: 850px) and (-webkit-min-device-pixel-ratio: 2){
   .signature {
     transform: scale(0.70);
     left: 30px;
   }
-  .topNavFrame {
+  .topNavFrame.open {
     height: 100%;
   }
   .line {
     width: 20px;
-    height: 1px;
+    height: 2px;
     background: white;
     margin: 5px;
   }
   .line.open {
-    color: black;
+    background: black;
   }
   .hamburger {
     position: fixed;
