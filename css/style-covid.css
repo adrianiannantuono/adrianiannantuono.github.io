@@ -3,6 +3,7 @@ body {
   color: white;
   margin: auto;
   overflow-x: hidden;
+  background: #050523;
 }
 .signature {
   position:fixed;
@@ -34,7 +35,6 @@ body {
 .COVIDPage {
   background: #050523;
   background-size: cover;
-  height: 100vh;
   z-index: 0;
 }
 .COVID-Content {
@@ -42,7 +42,7 @@ body {
   display: flex;
   width: 100%;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: none;
   justify-content: flex-start;
 }
 .COVID-Graph {
@@ -55,4 +55,12 @@ body {
   background-clip: padding-box;
   border: 20px solid transparent;
   border-radius: 40px;
+}
+@media screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2){
+  .COVID-Content {
+    flex-direction: column;
+  }
+  .COVID-Graph {
+    width: 85%;
+  }
 }
