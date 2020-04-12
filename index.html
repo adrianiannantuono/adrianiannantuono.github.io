@@ -10,9 +10,24 @@
     <title>Adrian Iannantuono</title>
 
     <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+		window.addEventListener('resize-iframe', function(e) {
+      console.log("here");
+			debugger;
+		  var iframe = $("#frame1");
+		  var eventName = e.data[0];
+		  var data = e.data[1];
+		  switch(eventName) {
+			case 'resize-iframe':
+			  iframe.height(data);
+        console.log(data);
+			  break;
+		  }
+  		}, false);
+	  </script>
   </head>
   <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <div class = "landingPage-0">
       <div class = "signature"><a href = "index.html"><img src ="images/Signature.png" alt="Signature" height = "50px"></a></div>
       <div class = "navBackground"></div>
@@ -38,7 +53,7 @@
     </div>
     <div style = "height:1000px;">
     </div>
-    <script src="js/nav.js"></script>
+    <script src = "js/nav.js"></script>
     <script src="js/nav-scroll.js"></script>
   </body>
 <html>

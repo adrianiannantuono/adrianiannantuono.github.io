@@ -8,11 +8,10 @@ if (hamburger) {
     navLinks.classList.toggle("open");
     for(i=0; i < lines.length; i++) {
       lines[i].classList.toggle("open");
-      console.log(lines[i]);
+      //console.log(lines[i]);
     }
-    if (topNavFrame) {
-      topNavFrame.classList.toggle("open");
-    }
-    console.log(navLinks);
+    var height = document.getElementsByTagName("html")[0].scrollHeight;
+		window.parent.postMessage(["resize-iframe", height], "*");
+    //console.log(navLinks);
   });
 }

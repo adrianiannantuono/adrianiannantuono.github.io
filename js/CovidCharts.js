@@ -104,5 +104,5 @@ var canada_usa_italy_china_confirmed_chart = new Chart(ctx, {
     ]
   }
 });
-setTimeout(function() { worldCases_worldDeaths_chart.update(); },500);
-setTimeout(function() { canada_usa_italy_china_confirmed_chart.update(); },500);
+setTimeout(function() { worldCases_worldDeaths_chart.update(); },800);
+setTimeout(function() { canada_usa_italy_china_confirmed_chart.update(); },800);

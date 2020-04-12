@@ -50,7 +50,6 @@ body {
   width: 45%;
   margin:0 0;
   padding: 15;
-  z-index: +7;
   background: rgba(17, 17, 49, 0.3);
   background-clip: padding-box;
   border: 20px solid transparent;

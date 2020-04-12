@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 150) {
+        if (scroll_pos > 100) {
           $(".navBackground").css('background', '#050523');
         } else {
           $(".navBackground").css('background', 'none');
