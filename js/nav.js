@@ -2,7 +2,6 @@ $("#topNav").load("/topNav.html");
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".navLinks");
 const lines = document.querySelectorAll(".line");
-//const topNavFrame = parent.document.querySelector(".topNavFrame");
 
 if (hamburger) {
   hamburger.addEventListener("click",()=> {
