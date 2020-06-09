@@ -11,21 +11,6 @@
 
     <link rel = "stylesheet" type = "text/css" href = "css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script>
-		window.addEventListener('resize-iframe', function(e) {
-      console.log("here");
-			debugger;
-		  var iframe = $("#frame1");
-		  var eventName = e.data[0];
-		  var data = e.data[1];
-		  switch(eventName) {
-			case 'resize-iframe':
-			  iframe.height(data);
-        console.log(data);
-			  break;
-		  }
-  		}, false);
-	  </script>
   </head>
   <body>
     <div class = "landingPage-0">
