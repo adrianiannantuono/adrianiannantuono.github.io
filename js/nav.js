@@ -1,3 +1,6 @@
+$.ajax({
+   async: true,   // this will solve the problem
+});
 $("#tNav").load("/topNav.html");
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".navLinks");
