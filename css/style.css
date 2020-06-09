@@ -28,7 +28,6 @@ body {
   transition: 0.2s;
 }
 .navLinks {
-  width: 100%;
   background: none;
   display: flex;
   flex-direction: row;
