@@ -15,6 +15,7 @@ body {
   height: 77px;
   border: none;
   margin: 0px;
+  background: red;
   position: fixed;
   overflow-x: hidden;
   z-index: +2;
