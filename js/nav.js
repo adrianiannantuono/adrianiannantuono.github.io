@@ -1,4 +1,6 @@
-$("#tNav").load("/topNav.html");
+$(document).ready( function() {
+    $("#tNav").load("/topNav.html");
+});
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".navLinks");
 const lines = document.querySelectorAll(".line");
