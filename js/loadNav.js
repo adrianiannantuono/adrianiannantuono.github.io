@@ -1,1 +1,1 @@
-$("#tNav").load("/topNav.html");
+$("#tNav").load("topNav.html");
