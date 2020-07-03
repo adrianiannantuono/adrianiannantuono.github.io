@@ -5,6 +5,6 @@ window.onscroll = function() {
        jQuery("#top-navigation").css('background-color', 'rgba(56, 56, 56, 0.9)');
     }
     else {
-       jQuery("#top-navigation").css('background-color', 'none');
+       jQuery("#top-navigation").css('background', 'none');
     }
 }
