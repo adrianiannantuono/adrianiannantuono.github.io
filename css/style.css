@@ -62,7 +62,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: auto 500px;
-  min-height: 50vh;
+  height: 65vh;
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
