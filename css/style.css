@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Avenir";
   overflow-x: hidden;
-  overflow-y: inherit;
+  overflow-y: visible;
 }
 .link-tag {
   font-size: 20px;
@@ -41,6 +41,7 @@
 .top-button {
   display: inline-block;
   align-items: center;
+  overflow-y: visible;
   cursor: pointer;
 }
 .link-tag:hover {
@@ -52,6 +53,7 @@
   width: 0px;
   height: 2px;
   display: block;
+  overflow-y: visible;
   background: #C6C6C6;
   transition: 250ms;
 }
