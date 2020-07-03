@@ -46,8 +46,11 @@
 }
 .top-hamburger {
   display: none;
+  justify-content: center;
   align-items: center;
+  align-content: center;
   overflow-y: visible;
+  margin-right: 30px;
   cursor: pointer;
   width: 30px;
 }
@@ -325,6 +328,9 @@
     .top-hamburger {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
     }
     .company-image-container {
         width: 100px;
