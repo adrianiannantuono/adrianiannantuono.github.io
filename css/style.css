@@ -44,6 +44,18 @@
   overflow-y: visible;
   cursor: pointer;
 }
+.top-hamburger {
+  display: inline-block;
+  align-items: center;
+  overflow-y: visible;
+  cursor: pointer;
+  width: 50px;
+}
+.top-hamburger-line {
+  background-color: white;
+  height: 3px;
+  width: inherit;
+}
 .link-tag:hover {
   transition: 250ms;
   color: #C6C6C6;
