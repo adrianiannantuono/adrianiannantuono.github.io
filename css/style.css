@@ -1,195 +1,334 @@
-body {
-  font-family: "Arial Rounded MT Bold";
-  color: white;
-  margin: auto;
-  overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir";
 }
-.signature {
-  position:fixed;
-  top: 10px;
-  left: 40px;
-  z-index: +3;
-}
-.topNavFrame {
-  width: 100%;
-  height: 77px;
-  border: none;
-  margin: 0px;
-  position: fixed;
-  overflow-x: hidden;
-  z-index: +2;
-}
-.navBackground {
-  position:fixed;
-  height: 77px;
-  width: 100%;
-  background: none;
-  z-index: +1;
-  transition: 0.2s;
-}
-.navLinks {
-  background: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.navItem {
-  text-decoration:none;
-  color: white;
-  align-items: center;
-  margin:0 0;
-  padding: 30 0;
-  transition: 0.2s;
-}
-.navItem:hover {
-  transition: 0.3s;
-  background-color: #E82C00;
-}
-a.navItem {
-  padding: 30 50;
-  font-size: 15px;
-  color: white;
-  text-decoration: none;
-  transition: 0.2s;
-}
-.COVID-Button {
-  position: fixed;
-  bottom: 15px;
-  left: 50%;
-  margin-left: -75px;
-  font-size: 17px;
-  text-align: center;
-  text-decoration:none
-  color:#E82C00;
-  line-height: 50px;
-  border-style: solid;
-  border-width: medium;
-  border-color: #E82C00;
-  border-radius: 50px;
-  height: 50px;
-  width: 150px;
-  transition: 0.2s;
-}
-.COVID-Button:hover {
-  transition: 0.3s;
-  transform: scale(1.05);
-}
-.landingPage-0 {
-  background: #050523 url('../images/Dotted_Background.png');
-  background-size: cover;
-  height: 100vh;
-  min-height: 500px;
-  z-index: 0;
-}
-.landingPage-0-Content {
-  text-decoration: none;
-  position: absolute;
-  float: left;
-  top:30%;
-  left: 6%;
-  transition: 0.2s;
-  z-index: 0;
-}
-.name-header {
-  font-size: 70px;
-}
-.description-header {
+.link-tag {
   font-size: 20px;
+  font-family: "Avenir heavy";
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
 }
-.buttons-header {
-  background: none;
+.top-navigation {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  z-index: +10;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
-.buttons-item {
-  margin: auto auto auto 0;
+.top-logo {
+  width: 200px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.top-button {
+  display: inline-block;
   align-items: center;
-  transition: 0.2s;
+  cursor: pointer;
 }
-.buttons-item:hover {
-  transition: 0.3s;
-  transform: scale(1.05);
+.link-tag:hover {
+  transition: 250ms;
+  color: #C6C6C6;
 }
-.resumeButton {
-  font-size: 17px;
-  text-align: center;
-  line-height: 50px;
-  background-color: #E82C00;
-  border-radius: 50px;
-  height: 50px;
-  width: 150px;
+.top-button:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #C6C6C6;
+  transition: 250ms;
 }
-.contentPage-top {
-  background: #050523 url('../images/Dotted_Background.png');
-  background-size: cover;
-  height: 200px;
+.top-button:hover::after {
+  width: 100%;
 }
-.contentPage-header {
-  font-size: 35px;
-  margin-left: 50px;
+.banner-image {
+  background-image: url("../images/banner-image.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 500px;
+  height: 65vh;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+@media screen and (max-width: 1068px) and (min-height: 723px){
+  .banner-image {
+    background-size: auto 50vh;
+  }
+}
+.banner-items {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
   text-align: left;
+  padding-left: 100px;
+  height: 100%;
 }
-.topNavFrame.open {
-  height: 50px;
+.banner-header-text {
+  font-family: "Avenir heavy";
+  font-size: 40px;
+  line-height: 50px;
+  color: white;
 }
-@media screen and (max-width: 850px) and (-webkit-min-device-pixel-ratio: 2){
-  .signature {
-    transform: scale(0.70);
-    left: 30px;
-  }
-  .topNavFrame.open {
-    height: 100%;
-  }
-  .line {
-    width: 20px;
-    height: 2px;
-    background: white;
-    margin: 5px;
-  }
-  .line.open {
-    background: black;
-  }
-  .hamburger {
-    position: fixed;
-    cursor: pointer;
-    right: 100px;
-    top: 26px;
-    z-index: 2;
-  }
-  .navLinks {
-    background: white;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
-    clip-path: polygon(0% 0%, 0% 100%);
-    -webkit-clip-path: polygon(0% 0%, 0% 100%);
-  }
-  .navLinks.open {
-    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
-    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
-  }
-  .navItem {
+.banner-sub-text {
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+.rectangle-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Avenir medium";
+  color: white;
+  width: 110px;
+  height: 30px;
+  border: solid 2px white;
+}
+.stat-squares {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  top: 53%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.stat-square {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 7px;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 80px;
+}
+.stat-square-top-text {
+  font-family: "Avenir heavy";
+  color: rgba(70, 70, 70, 1);
+  line-height: 30px;
+  font-size: 25px;
+}
+.stat-square-bottom-text {
+  color: rgba(70, 70, 70, 0.7);
+  font-size: 10px;
+}
+.companies-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    padding: auto auto;
-  }
-  a.navItem {
-    color: black;
-    padding: 30 50%;
-  }
-  .landingPage-0-Content {
-    transition: 0.2s;
-    transform: scale(0.70);
-  }
-  @media screen and (max-width: 500px) and (-webkit-min-device-pixel-ratio: 2){
-    .landingPage-0-Content {
-      transition: 0.2s;
-      left: -50px;
-      transform: scale(0.50);
+    flex-wrap: wrap;
+    width: 100%;
+}
+.company-image-container {
+    width: 130px;
+    height: 80px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%) opacity(25%);
+    transition: ease-in-out 0.4s;
+}
+.company-image-container:hover {
+    filter: none;
+    transition: ease-in-out 0.25s;
+}
+.banner-message-container {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Avenir medium";
+    margin: 70px;
+    text-align: center;
+    line-height: 40px;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.service-container {
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    max-width: 800px;
+    width: 40%;
+}
+.service-title {
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Avenir heavy";
+    line-height: 40px;
+}
+.service-image-container {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.service-description {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.service-learn-more {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid rgb(110, 50, 185);
+    color: rgb(110, 50, 185);
+    font-family: "Avenir medium";
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+}
+.footer-container {
+    background: rgb(56, 56, 56);
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: inherit;
+}
+.footer-image-container {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 20px;
+    width: 30%;
+    height: 100px;
+}
+.footer-items-container {
+    display: flex;
+    align-items: top;
+    width: 70%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.footer-items {
+    line-height: 35px;
+    margin: 40px;
+}
+.footer-item-title {
+    margin-bottom: 15px;
+}
+.footer-bottom-leaf {
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+    background-color: rgb(56, 56, 56);
+    margin-right: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%) opacity(25%);
+    transition: ease-in-out 0.4s;
+}
+.footer-bottom-leaf:hover {
+    filter: none;
+    transition: ease-in-out 0.25s;
+}
+.footer-bottom-message {
+    background: rgb(56, 56, 56);
+    color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+.footer-bottom-copyright {
+    background: rgb(56, 56, 56);
+    color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.footer-bottom-credit {
+    background: rgb(50, 50, 50);
+    color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.footer-link {
+    text-decoration: none;
+    color: inherit;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+@media (max-width: 1000px) {
+    .company-image-container {
+        width: 100px;
+        height: 50px;
+        margin: 10px;
     }
-    .hamburger {
-      right: 30px;
+    .services-container {
+        flex-direction: column;
     }
-  }
+    .service-container {
+        width: 90%;
+    }
+    .footer-container {
+        flex-direction: column;
+        height: inherit;
+    }
+    .footer-image-container {
+        width: 60%;
+        margin: 0px;
+    }
+    .footer-items-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-items {
+        margin: 20px;
+    }
+    .footer-item-title {
+        text-align: center;
+    }
+    .footer-item {
+        text-align: center;
+    }
 }
