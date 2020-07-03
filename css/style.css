@@ -333,6 +333,7 @@
       align-content: center;
     }
     .banner-items {
+      padding-left: 40px;
       transform: scale(0.7);
     }
     .company-image-container {
