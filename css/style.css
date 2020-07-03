@@ -49,11 +49,11 @@
   align-items: center;
   overflow-y: visible;
   cursor: pointer;
-  width: 50px;
+  width: 30px;
 }
 .top-hamburger-line {
   background-color: white;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   height: 3px;
   width: inherit;
 }
