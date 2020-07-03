@@ -53,6 +53,7 @@
 }
 .top-hamburger-line {
   background-color: white;
+  margin-bottom: 3px;
   height: 3px;
   width: inherit;
 }
