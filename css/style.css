@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 .top-hamburger {
-  display: inline-block;
+  display: none;
   align-items: center;
   overflow-y: visible;
   cursor: pointer;
@@ -320,6 +320,10 @@
 @media (max-width: 1000px) {
     .top-button {
       display: none;
+    }
+    .top-hamburger {
+      display: flex;
+      flex-direction: column;
     }
     .company-image-container {
         width: 100px;
