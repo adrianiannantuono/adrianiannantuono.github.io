@@ -43,7 +43,8 @@
   flex-direction: column;
 }
 .top-button {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   overflow-y: visible;
   z-index: +100;
