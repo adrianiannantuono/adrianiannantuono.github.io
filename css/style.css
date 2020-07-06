@@ -334,6 +334,9 @@
       padding-left: 30px;
       transform: scale(0.85);
     }
+    .stat-squares {
+      transform: scale(0.85);
+    }
     .company-image-container {
         width: 100px;
         height: 50px;
