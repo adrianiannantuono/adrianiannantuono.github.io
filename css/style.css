@@ -26,6 +26,7 @@
   position: fixed;
   width: 100%;
   height: inherit;
+  overflow-y: visible;
   z-index: +10;
   display: flex;
   flex-direction: row;
@@ -79,12 +80,12 @@
   width: 100%;
 }
 .banner-image {
+  min-width: 100%;
+  min-height: 500px;
   background-image: url("../images/banner-image.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-width: 100%;
-  min-height: 500px;
-  background-size: inherit;
+  background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 .banner-items {
