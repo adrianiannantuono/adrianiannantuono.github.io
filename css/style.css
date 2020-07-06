@@ -82,7 +82,7 @@
   background-image: url("../images/banner-image.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: auto 600px;
+  background-size: cover;
   min-height: 500px;
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
