@@ -9,7 +9,7 @@ function expandNav() {
     jQuery("#top-navigation").css('background-color', 'none');
     jQuery("#top-navigation").css('transition', 'ease-in-out 0.4s');
     jQuery(".top-button").css('display', 'flex');
-    jQuery(".top-navigation").css('height', '100vh');
-    jQuery(".top-navigation").css('flex-direction', 'column');
+    jQuery(".top-navigation").css('height', 'inherit;');
+    jQuery(".top-navigation").css('flex-direction', 'row');
   }
 }
