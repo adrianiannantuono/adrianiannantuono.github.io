@@ -73,7 +73,7 @@
   content: '';
   width: 0px;
   height: 2px;
-  display: flex;
+  display: inline-block;
   overflow-y: visible;
   background: #C6C6C6;
   transition: 250ms;
