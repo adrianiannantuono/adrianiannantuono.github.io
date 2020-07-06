@@ -123,7 +123,7 @@
   display: flex;
   text-align: center;
   flex-direction: row;
-  top: 53%;
+  top: 450px;
   left: 50%;
   transform: translateX(-50%);
 }
