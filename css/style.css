@@ -4,6 +4,9 @@
   font-family: "Avenir";
   overflow-x: hidden;
 }
+.body {
+  min-height: 100%;
+}
 .link-tag {
   font-size: 20px;
   font-weight: 800;
