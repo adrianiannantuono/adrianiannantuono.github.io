@@ -6,7 +6,7 @@
 }
 .link-tag {
   font-size: 20px;
-  font-family: "Avenir heavy";
+  font-weight: 800;
   display: flex;
   position: relative;
   justify-content: center;
@@ -97,7 +97,7 @@
   height: 500px;
 }
 .banner-header-text {
-  font-family: "Avenir heavy";
+  font-weight: 800;
   font-size: 40px;
   line-height: 50px;
   color: white;
@@ -113,7 +113,7 @@
   align-content: center;
   flex-direction: column;
   text-align: center;
-  font-family: "Avenir medium";
+  font-weight: 500;
   color: white;
   width: 110px;
   height: 30px;
@@ -142,7 +142,7 @@
   height: 80px;
 }
 .stat-square-top-text {
-  font-family: "Avenir heavy";
+  font-weight: 800;
   color: rgba(70, 70, 70, 1);
   line-height: 30px;
   font-size: 25px;
@@ -179,7 +179,7 @@
 .banner-message-container {
     font-size: 30px;
     color: rgba(0, 0, 0, 0.7);
-    font-family: "Avenir medium";
+    font-weight: 500;
     margin: 70px;
     text-align: center;
     line-height: 40px;
@@ -202,7 +202,7 @@
 .service-title {
     font-size: 25px;
     color: rgba(0, 0, 0, 0.7);
-    font-family: "Avenir heavy";
+    font-weight: 800;
     line-height: 40px;
 }
 .service-image-container {
@@ -225,7 +225,7 @@
     text-align: center;
     border: 2px solid rgb(110, 50, 185);
     color: rgb(110, 50, 185);
-    font-family: "Avenir medium";
+    font-weight: 500;
     width: 100px;
     height: 30px;
     line-height: 30px;
@@ -263,7 +263,7 @@
 }
 .footer-item-title {
     margin-bottom: 15px;
-    font-family: "Avenir heavy";
+    font-weight: 800;
     color: rgba(255, 255, 255, 0.9);
 }
 .footer-bottom-leaf {
