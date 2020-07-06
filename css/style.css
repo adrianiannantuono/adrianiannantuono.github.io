@@ -90,7 +90,6 @@
 }
 .banner-items {
   display: flex;
-  background-color: red;
   justify-content: center;
   align-content: center;
   flex-direction: column;
