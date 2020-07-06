@@ -41,7 +41,7 @@
 .top-button {
   display: inline-block;
   align-items: center;
-  overflow-y: visible;
+  overflow-y: auto;
   cursor: pointer;
 }
 .top-hamburger {
