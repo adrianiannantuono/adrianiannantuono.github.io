@@ -28,7 +28,7 @@ function expandNav() {
     jQuery("#home").css('margin-left', 'auto');
     jQuery(".top-button").css('display', 'none');
     jQuery(".top-button").css('height', 'auto');
-    jQuery(".top-button").css('width', 'auto');
+    jQuery(".top-button").css('width', '150px');
     jQuery(".top-navigation").css('flex-direction', 'row');
     jQuery(".top-navigation").css('height', 'inherit');
     jQuery(".top-logo").css('position', 'static');
