@@ -11,6 +11,7 @@ function expandNav() {
     jQuery(".top-logo").css('top', '0px');
     jQuery(".top-logo").css('left', '50%');
     jQuery(".top-logo").css('transform', 'translateX(-50%)');
+    jQuery("#home").css('margin-left', '0px');
     jQuery("#home").css('margin-top', '100px');
     jQuery("*").css('overflow', 'hidden');
   } else {
@@ -23,6 +24,7 @@ function expandNav() {
     jQuery(".top-navigation").css('height', 'inherit');
     jQuery(".top-logo").css('position', 'static');
     jQuery("#home").css('margin-top', '0px');
+    jQuery("#home").css('margin-left', '30px');
     jQuery("*").css('overflow-x', 'hidden');
     jQuery("*").css('overflow-y', 'auto');
   }
