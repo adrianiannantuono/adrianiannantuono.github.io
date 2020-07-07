@@ -9,7 +9,7 @@ function expandNav() {
     jQuery(".top-navigation").css('flex-direction', 'column');
     jQuery("*").css('overflow', 'hidden');
   } else {
-    if (window.screen.width > 1000) {
+    if ($(window).width() > 1000) {
       jQuery(".top-button").css('display', 'flex');
       jQuery(".top-hamburger").css('display', 'none');
       console.log("A");
