@@ -8,7 +8,7 @@ function expandNav() {
     jQuery(".top-navigation").css('height', '100vh');
     jQuery(".top-navigation").css('flex-direction', 'column');
     jQuery(".top-logo").css('position', 'fixed');
-    jQuery(".top-logo").css('top', '30px');
+    jQuery(".top-logo").css('top', '0px');
     jQuery(".top-logo").css('left', '50%');
     jQuery(".top-logo").css('transform', 'translateX(-50%)');
     jQuery("*").css('overflow', 'hidden');
