@@ -15,6 +15,13 @@ function expandNav() {
     jQuery("#home").css('margin-top', '100px');
     jQuery("*").css('overflow', 'hidden');
   } else {
+    if ($(window).width() > 1000) {
+      jQuery(".top-button").css('display', 'flex');
+      jQuery(".top-hamburger").css('display', 'none');
+    } else {
+      jQuery(".top-button").css('display', 'none');
+      jQuery(".top-hamburger").css('display', 'flex');
+    }
     jQuery("#top-navigation").css('background', 'none');
     jQuery("#top-navigation").css('transition', 'ease-in-out 0.4s');
     jQuery("#home").css('margin-left', 'auto');
