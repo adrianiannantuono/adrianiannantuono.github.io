@@ -2,7 +2,6 @@ function expandNav() {
   if (document.getElementById('top-navigation').style.height != "100vh") {
     jQuery("#top-navigation").css('background-color', 'rgba(56, 56, 56, 0.95)');
     jQuery("#top-navigation").css('transition', 'ease-in-out 0.4s');
-    jQuery(".top-button").css('display', 'flex');
     jQuery(".top-button").css('height', '90px');
     jQuery("#home").css('margin-left', 'inherit');
     jQuery(".top-navigation").css('height', '100vh');
