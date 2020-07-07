@@ -4,6 +4,7 @@ function expandNav() {
     jQuery("#top-navigation").css('transition', 'ease-in-out 0.4s');
     jQuery(".top-button").css('display', 'flex');
     jQuery(".top-button").css('height', '90px');
+    jQuery(".top-button").css('width', '150px');
     jQuery("#home").css('margin-left', 'inherit');
     jQuery(".top-navigation").css('height', '100vh');
     jQuery(".top-navigation").css('flex-direction', 'column');
@@ -27,6 +28,7 @@ function expandNav() {
     jQuery("#home").css('margin-left', 'auto');
     jQuery(".top-button").css('display', 'none');
     jQuery(".top-button").css('height', 'auto');
+    jQuery(".top-button").css('width', 'auto');
     jQuery(".top-navigation").css('flex-direction', 'row');
     jQuery(".top-navigation").css('height', 'inherit');
     jQuery(".top-logo").css('position', 'static');
