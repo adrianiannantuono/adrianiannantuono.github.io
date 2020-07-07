@@ -52,8 +52,8 @@
 }
 .top-hamburger {
   position: fixed;
-  top: 50px;
-  right: 50px;
+  top: 40px;
+  right: 40px;
   display: none;
   justify-content: center;
   align-items: center;
