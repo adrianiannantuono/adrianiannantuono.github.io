@@ -52,15 +52,15 @@
 }
 .top-hamburger {
   position: fixed;
-  top: 40px;
-  right: 40px;
+  top: 0;
+  right: 0;
   display: none;
   justify-content: center;
   align-items: center;
   align-content: center;
   overflow-y: visible;
   cursor: pointer;
-  padding: 10px;
+  padding: 40px;
   width: 30px;
 }
 .top-hamburger-line {
