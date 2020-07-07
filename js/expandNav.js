@@ -30,6 +30,7 @@ function expandNav() {
     jQuery(".top-navigation").css('flex-direction', 'row');
     jQuery(".top-navigation").css('height', 'inherit');
     jQuery(".top-logo").css('position', 'static');
+    jQuery(".top-logo").css('display', 'flex');
     jQuery("#home").css('margin-top', '0px');
     jQuery("#home").css('margin-left', '30px');
     jQuery("*").css('overflow-x', 'hidden');
