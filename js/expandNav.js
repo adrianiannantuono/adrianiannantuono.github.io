@@ -4,7 +4,7 @@ function expandNav() {
     jQuery("#top-navigation").css('transition', 'ease-in-out 0.4s');
     jQuery(".top-button").css('display', 'flex');
     jQuery(".top-button").css('height', '90px');
-    jQuery(".top-button").css('width', '150px');
+    jQuery(".top-button").css('width', '100%');
     jQuery("#home").css('margin-left', 'inherit');
     jQuery(".top-navigation").css('height', '100vh');
     jQuery(".top-navigation").css('flex-direction', 'column');
