@@ -6,7 +6,7 @@ function expandNav() {
     jQuery("#home").css('margin-left', 'inherit');
     jQuery(".top-navigation").css('height', '100vh');
     jQuery(".top-navigation").css('flex-direction', 'column');
-    jQuery(".top-hamburger").css('position', 'absolute');
+    jQuery(".top-hamburger").css('position', 'fixed');
     Query(".top-hamburger").css('top', '50px');
     Query(".top-hamburger").css('right', '50px');
     jQuery("*").css('overflow', 'hidden');
