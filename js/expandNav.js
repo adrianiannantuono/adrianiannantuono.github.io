@@ -35,7 +35,7 @@ function expandNav() {
     jQuery(".top-logo").css('display', 'flex');
     jQuery(".top-logo").css('transform', 'translateX(50%)');
     jQuery("#home").css('margin-top', '0px');
-    jQuery("#home").css('margin-left', '30px');
+    jQuery("#home").css('margin-left', 'auto');
     jQuery("*").css('overflow-x', 'hidden');
     jQuery("*").css('overflow-y', 'auto');
   }
