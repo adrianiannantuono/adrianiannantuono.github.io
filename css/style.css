@@ -52,14 +52,13 @@
 }
 .top-hamburger {
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 50px;
+  right: 50px;
   display: none;
   justify-content: center;
   align-items: center;
   align-content: center;
   overflow-y: visible;
-  margin-right: 30px;
   cursor: pointer;
   width: 30px;
 }
