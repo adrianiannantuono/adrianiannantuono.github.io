@@ -327,16 +327,6 @@
     text-decoration: underline;
 }
 @media (max-width: 1000px) {
-    .top-button {
-      display: none;
-    }
-    .top-hamburger {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-    }
     .banner-items {
       padding-left: 30px;
       transform: scale(0.85);
