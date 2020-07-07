@@ -10,11 +10,11 @@ function expandNav() {
     jQuery("*").css('overflow', 'hidden');
   } else {
     if (window.screen.width > 1000) {
-      jQuery(".top-button").css('display', 'flex');
-      jQuery(".top-hamburger").css('display', 'none');
-    } else {
       jQuery(".top-button").css('display', 'none');
       jQuery(".top-hamburger").css('display', 'flex');
+    } else {
+      jQuery(".top-button").css('display', 'flex');
+      jQuery(".top-hamburger").css('display', 'none');
     }
     jQuery("#top-navigation").css('background-color', 'none');
     jQuery("#top-navigation").css('transition', 'ease-in-out 0.4s');
