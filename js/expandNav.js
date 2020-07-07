@@ -7,8 +7,7 @@ function expandNav() {
     jQuery(".top-navigation").css('height', '100vh');
     jQuery(".top-navigation").css('flex-direction', 'column');
     jQuery(".top-hamburger").css('position', 'fixed');
-    jQuery(".top-hamburger").css('top', '50px');
-    jQuery(".top-hamburger").css('right', '50px');
+    jQuery(".top-hamburger").css('top', '30px');
     jQuery("*").css('overflow', 'hidden');
   } else {
     jQuery("#top-navigation").css('background-color', 'none');
