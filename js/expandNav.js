@@ -3,13 +3,10 @@ function expandNav() {
     jQuery("#top-navigation").css('background-color', 'rgba(56, 56, 56, 0.95)');
     jQuery("#top-navigation").css('transition', 'ease-in-out 0.4s');
     jQuery(".top-button").css('display', 'flex');
-    jQuery(".top-button").css('height', '60px');
+    jQuery(".top-button").css('height', '90px');
     jQuery("#home").css('margin-left', 'inherit');
     jQuery(".top-navigation").css('height', '100vh');
     jQuery(".top-navigation").css('flex-direction', 'column');
-    jQuery(".top-hamburger").css('position', 'fixed');
-    jQuery(".top-hamburger").css('top', '30px');
-    jQuery(".top-hamburger").css('right', '30px');
     jQuery("*").css('overflow', 'hidden');
   } else {
     jQuery("#top-navigation").css('background-color', 'none');
@@ -19,7 +16,6 @@ function expandNav() {
     jQuery(".top-button").css('display', 'flex');
     jQuery(".top-navigation").css('flex-direction', 'row');
     jQuery(".top-navigation").css('height', 'inherit');
-    jQuery(".top-hamburger").css('position', 'static');
     jQuery("*").css('overflow-x', 'hidden');
     jQuery("*").css('overflow-y', 'auto');
   }
