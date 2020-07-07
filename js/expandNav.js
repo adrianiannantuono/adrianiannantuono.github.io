@@ -1,11 +1,4 @@
 function expandNav() {
-  if (window.screen.width > 1000) {
-    jQuery(".top-button").css('display', 'none');
-    jQuery(".top-hamburger").css('display', 'flex');
-  } else {
-    jQuery(".top-button").css('display', 'flex');
-    jQuery(".top-hamburger").css('display', 'none');
-  }
   if (document.getElementById('top-navigation').style.height != "100vh") {
     jQuery("#top-navigation").css('background-color', 'rgba(56, 56, 56, 0.95)');
     jQuery("#top-navigation").css('transition', 'ease-in-out 0.4s');
@@ -16,7 +9,14 @@ function expandNav() {
     jQuery(".top-navigation").css('flex-direction', 'column');
     jQuery("*").css('overflow', 'hidden');
   } else {
-    jQuery("#top-navigation").css('background-color', 'none');
+    if (window.screen.width > 1000) {
+      jQuery(".top-button").css('display', 'flex');
+      jQuery(".top-hamburger").css('display', 'none');
+    } else {
+      jQuery(".top-button").css('display', 'none');
+      jQuery(".top-hamburger").css('display', 'flex');
+    }
+    jQuery("#top-navigation").css('background', 'none');
     jQuery("#top-navigation").css('transition', 'ease-in-out 0.4s');
     jQuery("#home").css('margin-left', 'auto');
     jQuery(".top-button").css('height', 'auto');
