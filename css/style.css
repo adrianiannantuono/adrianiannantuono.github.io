@@ -60,6 +60,7 @@
   align-content: center;
   overflow-y: visible;
   cursor: pointer;
+  padding: 10px;
   width: 30px;
 }
 .top-hamburger-line {
