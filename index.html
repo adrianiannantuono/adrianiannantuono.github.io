@@ -5,97 +5,118 @@
     <meta name = "description" content = "Description goes here">
     <meta name = "keywords" content = "HTML, CSS, XML, JavaScript">
     <meta name = "author" content = "Adrian Iannantuono">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
-    <title>Artech Images Inc.</title>
-    <link rel="shortcut icon" type="image/x-icon" href="images/Artech App Logo_No Stroke40px.jpg" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <title>Adrian Iannantuono</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel = "stylesheet" type = "text/css" href = "css/style.css">
   </head>
-  <body>
-    <div id="topNav">
-    </div>
-    <div class="banner-image">
-      <div class="banner-items">
-        <div class="banner-header-text">
-          Flexo Pre-Press<br>Specialists
+
+  <body id="content">
+    <div id="top-nav"></div>
+    <div class="home-main">
+      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false" data-interval="9000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" style="height:100vh;width:100%;">
+          <div class="carousel-item active">
+            <img class="home-main-image" src="images/Screen Shot 2019-01-11 at 3.59.07 PM.png" alt="First slide">
+            <div class="carousel-caption">
+              <p class="image-location-text" style="font-size: 15px;">Banff, Canada</p>
+              <p class="image-location-text" style="font-size: 12px;">July 3, 2018</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="home-main-image" src="images/a (1 of 1)-6.jpeg" alt="Second slide">
+            <div class="carousel-caption">
+              <p class="image-location-text" style="font-size: 15px;">Pisa, Italy</p>
+              <p class="image-location-text" style="font-size: 12px;">August 10, 2017</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="home-main-image" src="images/a (1 of 6).jpg" alt="Third slide">
+            <div class="carousel-caption">
+              <p class="image-location-text" style="font-size: 15px;">Riomaggorre, Italy</p>
+              <p class="image-location-text" style="font-size: 12px;">June 6, 2019</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="home-main-image" src="images/ezgif.com-video-to-gif.gif" alt="Fourth slide">
+            <div class="carousel-caption">
+              <p class="image-location-text" style="font-size: 15px;">Phoenix, USA</p>
+              <p class="image-location-text" style="font-size: 12px;">Sept 14, 2016</p>
+            </div>
+          </div>
         </div>
-        <div class="banner-sub-text">
-          Text goes here text goes
-        </div>
-        <br>
-        <div class="rectangle-button">
-          Get a quote
+        <div class="home-main-text">
+          <h2 style="opacity: 0.85;">Adrian Iannantuono</h2>
+          <h6 style="opacity: 0.5;">Programmer. Developer. Creator.</h6>
+          <br>
+          <button type="button" onclick="op_contact()" class="btn btn-primary btn-sm">Get In Touch</button>
         </div>
       </div>
     </div>
-    <div class="stat-squares">
-      <div class="stat-square">
-        <div class="stat-square-top-text">
-          160K+
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert" style="position:fixed;right:0px;bottom:0px;margin:20px;z-index: +100;">
+      <strong>COVID-19 Alert</strong><br>Learn more about the <a href="#" class="alert-link">COVID-19 Screening tool</a>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    
+    <div style="display:flex; justify-content: center;">
+      <div class="row" style="width: 75%; padding-top:50px;">
+        <div class="col d-flex justify-content-center">
+          <div class="card" style="width: 18rem; margin:10px;">
+            <img src="images/istockphoto-958956392-612x612.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Software & Hardware Solutions</h5>
+              <p class="card-text">Application development, embedded systems design, circuit & PCB design.</p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
         </div>
-        <div class="stat-square-bottom-text">
-          Orders Fufiled
+        <div class="col d-flex justify-content-center">
+          <div class="card" style="width: 18rem; margin:10px;">
+            <img src="images/77496510-electronic-three-dimensional-plastic-printer-during-work-3d-printer-3d-printing.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">3D Printing</h5>
+              <p class="card-text">High quality and affordable custom 3D prints.<br/><br/></p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="stat-square">
-        <div class="stat-square-top-text">
-          25
-        </div>
-        <div class="stat-square-bottom-text">
-          Years in business
-        </div>
-      </div>
-      <div class="stat-square">
-        <div class="stat-square-top-text">
-          16
-        </div>
-        <div class="stat-square-bottom-text">
-          Weeks until retirement
+        <div class="col d-flex justify-content-center">
+          <div class="card" style="width: 18rem; margin:10px;">
+            <img src="images/pexels-photo-212372.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Photography & Videography</h5>
+              <p class="card-text">Landscape, product, sports photography & videography.</p>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-        <div class="companies-container">
-            <div class="company-image-container" style="background-image: url('https://wwwen.uni.lu/var/storage/images/media/images/dupont_logo_png_transparent/1175159-1-fre-FR/dupont_logo_png_transparent.png');">
-            </div>
-            <div class="company-image-container" style="background-image: url('https://cdn.freebiesupply.com/logos/large/2x/epson-2-logo-png-transparent.png');">
-            </div>
-            <div class="company-image-container" style="background-image: url('https://shop.flexography.org/wp-content/uploads/2015/03/FTA-member-logo-resized.png');">
-            </div>
-            <div class="company-image-container" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Logo_of_the_Eastman_Kodak_Company_%282006%E2%80%932016%29.svg/440px-Logo_of_the_Eastman_Kodak_Company_%282006%E2%80%932016%29.svg.png');">
-            </div>
-            <div class="company-image-container" style="background-image: url('https://victory-graphics.co.uk/wp-content/uploads/2017/12/kodak_flexcel_nx.png');">
-            </div>
-        </div>
-        <div class="banner-message-container">
-            Banner message goes here banner message goes here banner message goes here banner message goes here
-        </div>
-        <div class="services-container">
-            <div class="service-container">
-                <div class="service-title">Graphic Design</div>
-                <div class="service-image-container" style="background-image: url('images/icons8-photo-editor-80.png')">
-                </div>
-                <div class="service-description">Text goes here text goes here Text goes here text goes here Text goes here text goes here Text goes here text goes here Text goes here text goes here</div>
-                <div class="service-learn-more">Learn more</div>
-            </div>
-            <div class="service-container">
-                <div class="service-title">Plates</div>
-                <div class="service-image-container" style="background-image: url('images/icons8-feed-paper-50.png')">
-                </div>
-                <div class="service-description">Text goes here text goes here Text goes here text goes here Text goes here text goes here Text goes here text goes here Text goes here text goes here</div>
-                <div class="service-learn-more">Learn more</div>
-            </div>
-            <div class="service-container">
-                <div class="service-title">Proofs</div>
-                <div class="service-image-container" style="background-image: url('images/icons8-separate-by-using-blank-sheets-50.png')">
-                </div>
-                <div class="service-description">Text goes here text goes here Text goes here text goes here Text goes here text goes here Text goes here text goes here Text goes here text goes here</div>
-                <div class="service-learn-more">Learn more</div>
-            </div>
-        </div>
-    <div id="footer">
+
+    <div style="display:flex; justify-content: center;">
+      <div style="width: 75%; padding-top:50px;">
+        <h3>Want to learn more about me?</h3>
+      </div>
     </div>
-    <script src="js/loadPaths.js"></script>
-    <script src="js/expandNav.js"></script>
+    
+    
+    <div id="footer"></div>
+
+    <div id="contact-popup" class="contact-popup"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src = "js/import-nav.js"></script>
+    <script src = "js/open-contact.js"></script>
   </body>
 <html>
